@@ -11,6 +11,7 @@ Open-source code for adaptive building-energy demand forecasting with:
 
 - `experiments/src/`: forecasting models, PSO adaptation, metrics, evaluation, and experiment runner
 - `figures/scripts/`: figure-generation scripts
+- `requirements.txt`: Python dependencies
 
 ## Data
 
@@ -21,6 +22,34 @@ The experiments use the public ASHRAE Great Energy Predictor III dataset:
 Raw data files are not committed to this repository. Place the downloaded data under:
 
 - `experiments/data/raw/`
+
+## Installation
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Running the code
+
+Run the end-to-end benchmark:
+
+```bash
+python -m experiments.src.run_all --n_buildings 20 --horizons 1,24,168,672
+```
+
+Generate tables from saved results:
+
+```bash
+python -m experiments.src.make_tables
+```
+
+Generate figures:
+
+```bash
+python -m experiments.src.make_figures
+```
 
 ## Main entry points
 
@@ -34,3 +63,4 @@ Raw data files are not committed to this repository. Place the downloaded data u
 
 - Raw data, manuscript sources, local logs, and generated PDFs are intentionally excluded from this repository.
 - Sustainability values in this codebase are computed as upper-bound reserve-procurement scenario estimates under the fixed rule implemented in the evaluation pipeline.
+- The repository is intended as a code release, not as the full paper-submission package.
