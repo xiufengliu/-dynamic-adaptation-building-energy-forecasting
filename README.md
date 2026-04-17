@@ -12,6 +12,9 @@ Open-source code for adaptive building-energy demand forecasting with:
 - `experiments/src/`: forecasting models, PSO adaptation, metrics, evaluation, and experiment runner
 - `figures/scripts/`: figure-generation scripts
 - `requirements.txt`: Python dependencies
+- `pyproject.toml`: package metadata for editable installation
+- `reproduce.sh`: convenience script for the full rerun
+- `CITATION.cff`: citation metadata for GitHub and Zenodo
 
 ## Data
 
@@ -29,6 +32,12 @@ Raw data files are not committed to this repository. Place the downloaded data u
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+```
+
+Or install as an editable package:
+
+```bash
+pip install -e .
 ```
 
 ## Running the code
@@ -49,6 +58,12 @@ Generate figures:
 
 ```bash
 python -m experiments.src.make_figures
+```
+
+Run the full workflow with one command:
+
+```bash
+bash reproduce.sh
 ```
 
 ## Main entry points

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the repository and the associated manuscript."
+title: "Dynamic Adaptation Building Energy Forecasting"
+type: software
+authors:
+  - family-names: "Liu"
+    given-names: "Xiufeng"
+    email: "xiuli@dtu.dk"
+repository-code: "https://github.com/xiufengliu/-dynamic-adaptation-building-energy-forecasting"
+license: "MIT"
+abstract: >
+  Open-source implementation of adaptive building-energy demand forecasting with
+  WGAN-GP forecasting, PSO-based hyperparameter adaptation, and baseline models
+  including ARIMA, LSTM, SVR, and GBM.
+keywords:
+  - building energy forecasting
+  - GAN
+  - WGAN-GP
+  - particle swarm optimization
+  - urban energy management
+
