@@ -1,0 +1,28 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.spl
+*.synctex.gz
+
+# Local/editor metadata
+.DS_Store
+.claude/
+__pycache__/
+*.pyc
+
+# Large local assets and backups not needed for code release
+pdf_pages/
+References/
+refs/
+experiments/data/raw/
+experiments/results_backups/
+experiments/results/logs/
+
+# Generated PDFs and office documents
+*.pdf
+*.docx
